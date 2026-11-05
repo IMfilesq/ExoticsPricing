@@ -1,5 +1,7 @@
 import numpy as np
+
 from option.area_spread.process_params import ProcessParams
+
 
 class Process:
     """

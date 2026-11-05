@@ -1,6 +1,7 @@
 import numpy as np
+
 from option.area_spread.process_params import ProcessParams
-import scipy.stats as st
+
 
 class Process:
     """

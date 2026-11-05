@@ -1,5 +1,7 @@
 import pandas as pd
+
 from option.area_spread.area_spread import AreaSpreadOption
+
 
 def price_aso() -> None:
     KO = pd.read_csv("data/KO_stock.csv")

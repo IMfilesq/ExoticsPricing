@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
-import numpy
-import pandas as pd
-from sde_simulator.sde_engine import SDESimulator
-from sde_simulator.option_params import OptionParams
-from option.put.payoff import Payoff
 import numpy as np
+import pandas as pd
+
+from sde_simulator.option_params import OptionParams
+from sde_simulator.sde_engine import SDESimulator
+
 
 class Visualizer:
       """

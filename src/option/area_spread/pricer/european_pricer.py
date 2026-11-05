@@ -1,8 +1,11 @@
-from typing import Callable
-from sde_simulator.sde_engine import SDESimulator
-from sde_simulator.option_params import OptionParams
-from option.area_spread.controll_spread import Controll
+from collections.abc import Callable
+
 import numpy as np
+
+from option.area_spread.controll_spread import Controll
+from sde_simulator.option_params import OptionParams
+from sde_simulator.sde_engine import SDESimulator
+
 
 class EuropeanPricer:
     """

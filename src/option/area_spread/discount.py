@@ -1,6 +1,8 @@
 import numpy as np
+
 from option.area_spread.process_params import ProcessParams
 from sde_simulator.option_params import OptionParams
+
 
 class Discount:
     """

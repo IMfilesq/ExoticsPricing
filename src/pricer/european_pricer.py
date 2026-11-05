@@ -1,6 +1,8 @@
-from typing import Callable
-from sde_simulator.sde_engine import SDESimulator
+from collections.abc import Callable
+
 from sde_simulator.option_params import OptionParams
+from sde_simulator.sde_engine import SDESimulator
+
 
 class EuropeanPricer:
     """

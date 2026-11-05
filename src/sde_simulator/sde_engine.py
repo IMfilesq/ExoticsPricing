@@ -1,6 +1,9 @@
+from collections.abc import Callable
+
 import numpy as np
-from typing import Callable
+
 from .option_params import OptionParams
+
 
 class SDESimulator:
     """

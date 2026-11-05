@@ -1,13 +1,15 @@
-from option.put_benchmark.put import Put as QuantLibPut
 import pandas as pd
-from option.put.process_params import ProcessParams
-from option.put.process import Process
-from option.put.payoff import Payoff
+
 from option.put.discount import Discount
+from option.put.payoff import Payoff
+from option.put.process import Process
+from option.put.process_params import ProcessParams
+from option.put_benchmark.put import Put as QuantLibPut
 from pricer.american_pricer import AmericanPricer
 from pricer.european_pricer import EuropeanPricer
 from sde_simulator.option_params import OptionParams
 from sde_simulator.sde_engine import SDESimulator
+
 
 def validate_put() -> None:
     sigma = 0.5
@@ -46,10 +48,10 @@ def validate_put() -> None:
         amer_df.loc[k, "QuantLib"] = QuantLibPut.american_price(S0, k, T, r, sigma)
         amer_df.loc[k, "MyPut"] = ap(opt_par)
 
-    print("Parameters used : (S0 = {}, r = {}, sigma = {}, T = {})".format(S0, r, sigma, T))
+    print(f"Parameters used : (S0 = {S0}, r = {r}, sigma = {sigma}, T = {T})")
     print("Comparison of European put option prices:")
     print(euro_df)
-    print("simulation parameters : (n_sim = {}, n_intervals = {})".format(opt_par.n_sim, opt_par.n_intervals))
+    print(f"simulation parameters : (n_sim = {opt_par.n_sim}, n_intervals = {opt_par.n_intervals})")
     print("Grid 1000x1000)")
     print("Comparison of American put option prices:")
     print(amer_df)

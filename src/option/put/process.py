@@ -1,5 +1,7 @@
-from option.put.process_params import ProcessParams
 import numpy as np
+
+from option.put.process_params import ProcessParams
+
 
 class Process:
     """

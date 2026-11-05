@@ -1,0 +1,2 @@
+American variance reduced by: 30.58 % (95% CI: [27.67%, 33.41%])
+European variance reduced by: 31.17 % (95% CI: [28.64%, 33.92%])

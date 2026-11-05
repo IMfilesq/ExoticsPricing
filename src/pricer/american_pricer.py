@@ -1,9 +1,12 @@
-from typing import Callable
-from sde_simulator.sde_engine import SDESimulator
-from sde_simulator.option_params import OptionParams
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.linear_model import LinearRegression
+from collections.abc import Callable
+
 import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+
+from sde_simulator.option_params import OptionParams
+from sde_simulator.sde_engine import SDESimulator
+
 
 class AmericanPricer:
     """

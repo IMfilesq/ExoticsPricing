@@ -1,8 +1,10 @@
-from option.area_spread.visualizer import Visualizer
 import pandas as pd
+
 from option.area_spread.calibrator import Calibrator
 from option.area_spread.process import Process
+from option.area_spread.visualizer import Visualizer
 from sde_simulator.sde_engine import SDESimulator
+
 
 def generate_aso_fig() -> None:
     KO = pd.read_csv("data/KO_stock.csv")
